@@ -33,6 +33,21 @@ class DashboardPage extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
+            Container(
+              margin: const EdgeInsets.only(bottom: 10),
+              width: double.infinity,
+              padding: const EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: gray_1
+              ),
+              child: Column(
+                children: [
+                  Text(controller.users.name??"",style: style600_18(color: Colors.black),),
+                  Text(controller.users.username??"",style: style600_18(color: Colors.black),)
+                ],
+              ),
+            ),
             Row(
               children: [
                 Expanded(
